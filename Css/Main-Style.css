@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #eee;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)),
+        url(/images/header-img.jpeg) no-repeat center /cover;
+
+    height: 100vh;
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.banner-heading {
+    animation-name: moveText;
+    animation-duration: 2.5s;
+}
+
+.banner-par {
+    animation-name: moveText;
+    animation-duration: 2.5s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+.nav-menu {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+    transition: all .5s;
+    padding: 5px 30px;
+}
+
+.menu-item {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    color: #eee;
+    transition: color .5s;
+}
+
+#nav-toggle-btn:active :focus {
+    box-shadow: none;
+}
+
+.nav-active {
+    color: #b2922e;
+
+}
+
+.menu-item:hover {
+    color: #b2922e;
+}
+
+.navbar-brand a img {
+    transition: all .5s;
+
+}
+
+.brand-img {
+    width: 80px;
+    height: 70px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all .5s;
+}
+
+.x-shap .line-1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+    background-color: #B2922E !important;
+}
+
+.x-shap .line-2 {
+    transform: rotate(45deg) translate(-1px, 0px);
+    background-color: #B2922E !important;
+}
+
+.x-shap .line-3 {
+    opacity: 0;
+}
+
+/* Nav bar Scrol */
+.custem-navbar {
+    padding: 0px 30px;
+
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* Mission  */
+.mission {
+    background: #151f20;
+}
+
+.mission p {
+    line-height: 1.9rem;
+}
+
+.mission i {
+    color: #B2922E;
+}
+
+.underLine {
+    width: 150px;
+    border: 3px solid #B2922E;
+    margin: auto;
+}
+
+/* Part 2 */
+.img-fromLeft {
+    animation-name: img-fromLeft;
+    animation-duration: 3s;
+}
+
+.text-fromRight {
+    animation-name: text-fromRight;
+    animation-duration: 3s;
+}
+
+@keyframes img-fromLeft {
+    0% {
+        transform: translate(-120px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-fromRight {
+    0% {
+        transform: translate(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+/* End Mission */
+
+/* Colliction Section */
+.collection .col p {
+    line-height: 30px;
+}
+
+.card-shadow {
+    box-shadow: 7px 8px 20px #444;
+}
+
+.img-heading {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    background: #222;
+    opacity: .8;
+    cursor: pointer;
+    transition: all .6s;
+    width: 70%;
+}
+
+.img-heading:hover {
+    transform: translateY(-2px);
+    color: #B2922E !important;
+    opacity: 1;
+    font-size: 1rem;
+}
+
+/* End Colliction Section */
+.filter {
+    transition: all .5s;
+}
+
+/* Gallery */
+.gallery-list-item {
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+    transition: all .4s;
+}
+
+.active-item {
+
+    color: #B2922E !important;
+    /* font-size: 1.3rem; */
+}
+
+/* End Gallery */
+
+
+/* Cusomers */
+.cusomers {
+    background-color: #151f20;
+}
+
+.cusomers p {
+    line-height: 1.9rem;
+}
+
+/* End Customer */
+
+/* Price */
+.Price p {
+    line-height: 1.9rem;
+    font-size: 1.25rem !important;
+}
+
+.priceCard {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(/images/pricing-card-bg.jpeg) no-repeat center/cover;
+    /* min-height: 500px; */
+    box-shadow: 10px 20px 30px #555;
+    max-width: 400px;
+}
+
+
+.custem-list li {
+    padding: 20px 10px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    width: 50%;
+    margin: 0px auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.custem-list li:last-child {
+    border: none
+}
+
+.SignUp-btn {
+    background-color: #B2922E;
+    border-radius: 25px;
+    box-shadow: 5px 8px 20px #222;
+    width: 40%;
+    margin: 0px auto;
+    font-weight: bold;
+    color: white;
+    transition: all .3s;
+}
+
+.SignUp-btn:hover {
+    background-color: rgb(255, 207, 61);
+    transform: translateY(-3px);
+    box-shadow: 7px 10px 23px #222;
+    color: white;
+}
+
+.card-fromleft {
+    animation-name: card-fromleft;
+    animation-duration: 2s;
+}
+
+.card-fromBottom {
+    animation-name: card-fromBottom;
+    animation-duration: 2s;
+}
+
+.card-fromRight {
+    animation-name: card-fromRight;
+    animation-duration: 2s;
+}
+
+@keyframes card-fromleft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes card-fromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes card-fromBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* End Price */
+
+/* Contact Form  */
+
+.btn-gold {
+    background-color: #B2922E;
+    transition: all .4s;
+}
+
+.btn-gold:hover {
+    background-color: rgb(233, 186, 47);
+    transform: translateY(-2px);
+}
+
+.contact {
+    background: linear-gradient(110deg,
+            rgba(21, 31, 32, 1)0%,
+            rgba(21, 31, 32, .90)50%, transparent 50%), url(/images/City.jpg) no-repeat center /cover;
+
+    background-attachment: fixed;
+
+}
+
+.contact input {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 1.7px solid #ccc;
+    border-radius: 0;
+    transition: all .7s;
+}
+
+.contact input:focus {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 1.7px solid rgb(230, 182, 39);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.contact .custem-label {
+    color: #777;
+    margin-top: -70px;
+    display: block;
+    margin-left: 5px;
+    font-size: .99rem;
+    transition: all .4s;
+}
+
+.custem-input:placeholder-shown+.custem-label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (max-width:992px) {
+
+    .contact {
+        background: linear-gradient(rgba(21, 31, 32, 1), rgba(21, 31, 32, .95));
+    }
+
+    .contact-form {
+        width: 80%;
+        margin: auto;
+    }
+
+    .contact h3 {
+        text-align: center;
+    }
+
+}
+
+/*End  Contact Form  */
+
+/* Footer */
+footer {
+    margin-top: 80px;
+}
+
+footer .col-lg-4 p {
+    font-size: .95rem;
+    line-height: 1.3rem;
+}
+
+.bg-gold {
+    color: #B2922E;
+}
+
+.insta-color {
+    color: rgb(255, 42, 109);
+}
+
+footer {
+    margin-top: 150px;
+}
+
+/*End  Footer */
